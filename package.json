@@ -1,0 +1,26 @@
+{
+  "name": "danchidin_advent2021",
+  "version": "1.0.0",
+  "description": "",
+  "main": "\"\"",
+  "scripts": {
+    "test": "mocha --recursive --exit --timeout 10000 test/*.test.js",
+    "coverage": "nyc --all --reporter=html --rporter=text-lcov npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/damisv/adventofcode2021.git"
+  },
+  "author": "damisv@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/damisv/adventofcode2021/issues"
+  },
+  "homepage": "https://github.com/damisv/adventofcode2021#readme",
+  "devDependencies": {
+    "assert": "^2.0.0",
+    "mocha": "^9.1.3",
+    "nyc": "^15.1.0",
+    "sinon": "^12.0.1"
+  }
+}
