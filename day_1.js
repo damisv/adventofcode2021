@@ -44,16 +44,18 @@ function getNumberOfIncreasedWindows(input, windowSize) {
 /**
  * 
  */
-async function computeDay1() {
+async function computeDay1(path = "./inputs/day_1.txt", windowSize = 1) {
+    let increases = null;
+
     try {
-        const input = await readFile("./inputs/day_1.txt", [toStringAndSplitBy, toInteger]);
+        const input = await readFile(path, [toStringAndSplitBy, toInteger]);
 
-        const increases = getNumberOfIncreasedWindows(input, 3);
-
-        console.log(increases);
+        increases = getNumberOfIncreasedWindows(input, windowSize);
     } catch (ex) {
         console.error("Error occurred: ", ex);
     }
+
+    return increases;
 }
 
-computeDay1();
+module.exports = computeDay1;

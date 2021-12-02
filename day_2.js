@@ -1,4 +1,4 @@
-const { readFile, toStringAndSplitBy, toInteger } = require("./utils");
+const { readFile, toStringAndSplitBy } = require("./utils");
 
 function getHorizontalDepthAndAim(input, partOne = false) {
     let horizontal = 0,
@@ -38,16 +38,18 @@ function getHorizontalDepthAndAim(input, partOne = false) {
 /**
  * 
  */
-async function computeDay2() {
+async function computeDay2(path = "./inputs/day_2.txt", partOne = false) {
+    let horizontal, depth, aim = null;
     try {
-        const input = await readFile("./inputs/day_2.txt", [toStringAndSplitBy]);
+        const input = await readFile(path, [toStringAndSplitBy]);
 
-        const {horizontal, depth, aim} = getHorizontalDepthAndAim(input);
+        ({horizontal, depth, aim} = getHorizontalDepthAndAim(input, partOne));
 
-        console.log(horizontal * depth);
     } catch (ex) {
         console.error("Error occurred: ", ex);
     }
+
+    return horizontal * depth;
 }
 
-computeDay2();
+module.exports = computeDay2;
