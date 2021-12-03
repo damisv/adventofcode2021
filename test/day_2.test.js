@@ -1,9 +1,9 @@
 const assert = require("assert");
 
 const sinon = require("sinon"),
-    path = "./test_input/day_2.txt",
-    path_to_personal_input = "./inputs/day_2.txt",
-    computeDay2 = require("../day_2");
+    path = "./test/test_input/day_2.txt",
+    path_to_personal_input = "./src/day_2/day_2.txt",
+    computeDay2 = require("../src/day_2/day_2");
 
 describe("unit_tests day_2", () => {
 

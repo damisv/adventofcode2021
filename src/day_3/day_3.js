@@ -1,4 +1,4 @@
-const { readFile, toStringAndSplitBy } = require("./utils");
+const { readFile, toStringAndSplitBy } = require("../../utils");
 
 /**
  * 
@@ -131,7 +131,7 @@ function getLifeSupportRating(input) {
  * @param {*} partOne 
  * @returns 
  */
-async function computeDay3(path = "./inputs/day_3.txt", partOne = false) {
+async function computeDay3(path = ".src/day_3/day_3.txt", partOne = false) {
     let response = null;
 
     try {

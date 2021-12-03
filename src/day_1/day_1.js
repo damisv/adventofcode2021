@@ -1,4 +1,4 @@
-const { readFile, toStringAndSplitBy, toInteger } = require("./utils");
+const { readFile, toStringAndSplitBy, toInteger } = require("../../utils");
 
 /**
  * 
@@ -44,7 +44,7 @@ function getNumberOfIncreasedWindows(input, windowSize) {
 /**
  * 
  */
-async function computeDay1(path = "./inputs/day_1.txt", windowSize = 1) {
+async function computeDay1(path = "./src/day_1/day_1.txt", windowSize = 1) {
     let increases = null;
 
     try {
