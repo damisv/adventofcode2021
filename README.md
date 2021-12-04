@@ -10,3 +10,8 @@
 
 ### [Day 4 : Giant Squid](https://github.com/damisv/adventofcode2021/tree/main/src/day_4)
 `node index.js --day=4 --partOne=false`
+
+
+### Simple unit-tests
+- `npm i`
+- `npm run coverage`
