@@ -12,6 +12,38 @@ function toStringAndSplitBy(data, separator = "\n") {
 /**
  * 
  * @param {*} data 
+ * @param {*} toReplace 
+ * @param {*} withReplace 
+ * @returns 
+ */
+function replaceChars(data, toReplace = /\s+/g, withReplace = "_") {
+    return data.toString().replace(toReplace, withReplace);
+}
+
+/**
+ * 
+ * @param {*} functionTocall 
+ * @param {*} arguments 
+ * @returns 
+ */
+function proxyFormatter(functionTocall, arguments) {
+    return (data) => {
+        return functionTocall(data, ...arguments);
+    };
+}
+
+/**
+ * 
+ * @param {*} data 
+ * @returns 
+ */
+function joinString(data) {
+    return data.join("");
+}
+
+/**
+ * 
+ * @param {*} data 
  * @param {*} radix 
  * @returns 
  */
@@ -42,5 +74,8 @@ module.exports = {
     readFile,
 
     toStringAndSplitBy,
+    replaceChars,
+    proxyFormatter,
+    joinString,
     toInteger
 };
