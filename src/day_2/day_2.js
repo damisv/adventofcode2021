@@ -1,4 +1,5 @@
 const { readFile, toStringAndSplitBy } = require("../../utils");
+const { resolve } = require("path");
 
 function getHorizontalDepthAndAim(input, partOne = false) {
     let horizontal = 0,
@@ -38,7 +39,7 @@ function getHorizontalDepthAndAim(input, partOne = false) {
 /**
  * 
  */
-async function computeDay2(path = ".src/day_2/day_2.txt", partOne = false) {
+async function computeDay2(path = resolve(".src/day_2/day_2.txt"), partOne = false) {
     let horizontal, depth, aim = null;
     try {
         const input = await readFile(path, [toStringAndSplitBy]);
