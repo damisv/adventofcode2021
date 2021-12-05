@@ -45,7 +45,7 @@ function getNumberOfIncreasedWindows(input, windowSize) {
 /**
  * 
  */
-async function computeDay1(path = resolve("./src/day_1/day_1.txt"), windowSize = 1) {
+async function compute(path = resolve("./src/day_1/day_1.txt"), windowSize = 1) {
     let increases = null;
 
     try {
@@ -59,4 +59,4 @@ async function computeDay1(path = resolve("./src/day_1/day_1.txt"), windowSize =
     return increases;
 }
 
-module.exports = computeDay1;
+module.exports = compute;

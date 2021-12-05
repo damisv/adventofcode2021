@@ -39,7 +39,7 @@ function getHorizontalDepthAndAim(input, partOne = false) {
 /**
  * 
  */
-async function computeDay2(path = resolve(".src/day_2/day_2.txt"), partOne = false) {
+async function compute(path = resolve(".src/day_2/day_2.txt"), partOne = false) {
     let horizontal, depth, aim = null;
     try {
         const input = await readFile(path, [toStringAndSplitBy]);
@@ -53,4 +53,4 @@ async function computeDay2(path = resolve(".src/day_2/day_2.txt"), partOne = fal
     return horizontal * depth;
 }
 
-module.exports = computeDay2;
+module.exports = compute;

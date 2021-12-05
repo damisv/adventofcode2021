@@ -120,7 +120,7 @@ function getBingoWinnerScore(inputStream, boards, partOne) {
  * @param {*} partOne 
  * @returns 
  */
-async function computeDay4(path = resolve("./src/day_4/day_4.txt"), partOne = false) {
+async function compute(path = resolve("./src/day_4/day_4.txt"), partOne = false) {
     let response = null;
 
     try {
@@ -139,4 +139,4 @@ async function computeDay4(path = resolve("./src/day_4/day_4.txt"), partOne = fa
     return response;
 }
 
-module.exports = computeDay4;
+module.exports = compute;

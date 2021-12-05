@@ -132,7 +132,7 @@ function getLifeSupportRating(input) {
  * @param {*} partOne 
  * @returns 
  */
-async function computeDay3(path = resolve(".src/day_3/day_3.txt"), partOne = false) {
+async function compute(path = resolve(".src/day_3/day_3.txt"), partOne = false) {
     let response = null;
 
     try {
@@ -152,4 +152,4 @@ async function computeDay3(path = resolve(".src/day_3/day_3.txt"), partOne = fal
     return response;
 }
 
-module.exports = computeDay3;
+module.exports = compute;
