@@ -100,7 +100,6 @@ function computeNumberOfVentsToAvoid(input, partOne) {
     for (const line of vents_coordinates) {
         const [[x1,y1], [x2, y2]] = line;
 
-        // horizontal and vertical
         const isDiagonal = x1 !== x2 && y1 !== y2;
 
         if (partOne && isDiagonal) continue;
