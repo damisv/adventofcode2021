@@ -19,6 +19,12 @@
 - `node index.js --day=5 --partOne=false`
 - With base test input `node index.js --day=5 --partOne=false --testInput=true`
 
+### [Day 6: Lanternfish](https://github.com/damisv/adventofcode2021/tree/main/src/day_6)
+- `node index.js --day=6`
+- With base test input ( 18 days ) `node index.js --day=6 --testInput=true --days=18`
+- With base test input ( 80 days ) `node index.js --day=6 --testInput=true --days=80`
+- With base test input ( 256 days ) `node index.js --day=6 --testInput=true --days=256`
+
 ### Simple tests
 - `npm i`
 - `npm run coverage`

@@ -5,7 +5,7 @@ const sinon = require("sinon"),
     path_to_personal_input = "./src/day_5/day_5.txt",
     computeDay = require("../src/day_5/day_5");
 
-describe("unit_tests day_4", () => {
+describe("unit_tests day_5", () => {
 
     const sandbox = sinon.createSandbox();
 

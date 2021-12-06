@@ -1,4 +1,5 @@
 const formatters = {
+    days: parseInt,
     day: parseInt,
     testinput: (input) => input.toLowerCase() === "true",
     windowssize: parseInt,
