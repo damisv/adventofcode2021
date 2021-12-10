@@ -25,6 +25,9 @@
 - With base test input ( 80 days ) `node index.js --day=6 --testInput=true --days=80`
 - With base test input ( 256 days ) `node index.js --day=6 --testInput=true --days=256`
 
+### [Day 7: The Treachery of Whales](https://github.com/damisv/adventofcode2021/tree/main/src/day_7)
+- `node index.js --day=7`
+
 ### Simple tests
 - `npm i`
 - `npm run coverage`
