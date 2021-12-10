@@ -39,4 +39,32 @@ describe("unit_tests day_7", () => {
         sinon.assert.match(res, expectedResult);
     });
 
+    it("Should return 168", async () => {
+        const expectedResult = 168;
+
+        let res = null;
+
+        try {
+            res = await computeDay(path, false);
+        } catch (ex) {
+            assert.fail();
+        }
+
+        sinon.assert.match(res, expectedResult);
+    });
+
+    it("Should return 99266250 - personal input", async () => {
+        const expectedResult = 99266250;
+
+        let res = null;
+
+        try {
+            res = await computeDay(path_to_personal_input, false);
+        } catch (ex) {
+            assert.fail();
+        }
+
+        sinon.assert.match(res, expectedResult);
+    });
+
 });
